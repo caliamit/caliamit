@@ -1,0 +1,353 @@
+﻿body {
+    background-image: url("../Images/background.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    user-select:none
+}
+
+
+
+#bodyTR {
+    background-color: black;
+}
+
+.yt {
+    margin-left: 900px;
+}
+
+.instagram {
+    margin-left: 900px;
+}
+
+.image-container {
+    color: white;
+    margin-right: 150px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 90px;
+}
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-container p {
+        margin-top: 5px;
+        color: white;
+        opacity: 0.8;
+    }
+
+
+
+.TRIMG img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.TRIMG {
+    width: 380px;
+    height: 285px;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.TRP {
+    font-size: 100%;
+}
+
+
+#headline1 {
+    text-align: center;
+    font-size: 65px;
+}
+
+#gornation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    position: relative;
+    top: 100px;
+}
+
+#ph1 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    transform: translate(-15%, 1100%);
+
+}
+
+
+
+
+#CO {
+    display: block;
+    margin-right: auto;
+    width: 20%;
+}
+
+
+.navbar {
+    overflow: hidden; 
+    background-color: black;
+    font-family: Arial;
+    font-family: 'Avenir LT Pro', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+@import url('https://fonts.cdnfonts.com/css/avenir-lt-pro');
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+       color: rgba(46, 134, 222, 1);
+    }
+    .navbar a:active, .dropdown:active .dropbtn {
+        color: rgba(46, 134, 222, 0.8);
+    }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+
+    .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        
+    }
+
+
+        .dropdown-content a:hover {
+            background-color: none;
+        }
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position: fixed; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -235%);
+    z-index: 2;
+    width: 860px;
+    padding: 20px;
+    text-align: center;
+}
+
+#Transform1 {
+    width: 200px;
+    height: 200px;
+}
+.User {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-right:13px;
+    padding-top:13px;
+}
+
+    .User a {
+        float: right;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: white;
+    }
+
+
+
+.webicon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width:10px;
+
+}
+.welcomeMsg {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-right:13px;
+    padding-top:13px;
+}
+    .welcomeMsg a{
+        float:right;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: white;
+    }
+
+.errorMsg {
+    color: black;
+    margin-right:2%;
+   
+}
+#submit {
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 15px;
+    margin: 20px;
+    background-color: transparent;
+    border-radius: 70px;
+    width: 80%;
+    font-size: 110%;
+    transform: translateY(110%);
+}
+#submit:hover{
+    cursor:pointer;
+}
+
+.txt-box-login input,label {      /* input:txt box. label:"Username" & "Password" */
+    background-color:rgba(255,0,0,0.5);
+    padding:10px;
+    margin:20px;
+    background-color:transparent;
+    font-size:110%;
+}
+::placeholder{
+    color: gray;
+}
+.background {
+    border: rgba(255, 255, 255, 0.7); 
+    background-color:transparent;
+    max-width: 400px; 
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border:2px solid;
+    border-color: rgba(255,255,255,0.5)
+}
+.signIn {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.errorMsg{
+text-align:center;
+transform:translateY(-1500%);
+}
+.rememberMe {
+    float: left;
+}
+
+    .rememberMe input, label {
+        margin-left: auto;
+        
+    }
+#rememberMe:hover{
+    cursor: pointer;
+}
+#register{
+    font-size:90%;
+    text-align:center;
+    font-family:'Arial Rounded MT';
+    transform:translateY(30%);
+}
+
+#register a{
+    font-style:unset;
+    text-decoration:none;
+    color:blueviolet;
+}
+#register a:active{
+    color:black;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+#signin-opening {
+    color:black;
+}
+#userName {
+    border:none;
+    border-bottom: 2px solid;
+    border-color:white;
+    outline:none;
+}
+#passwd{
+    border:none;
+    border-bottom:2px solid;
+    border-color:white;
+    outline:none;
+}
+
+
+
+
+

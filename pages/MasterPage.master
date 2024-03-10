@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="pages_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/StyleSheet.css" /> 
+    <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
+
+</head>
+<body >
+
+        <div class="navbar">
+     <a href="Home Page.aspx">Home</a>
+     <a href="Transform.aspx">Transform</a>
+     <div class=about>
+         <a href="About.aspx">About</a>
+
+
+
+
+
+         <div class="dropdown">
+    <button class="dropbtn">
+        Info
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="equipment.aspx">Equipment</a>
+        <a href="Tips.aspx">Tips</a>
+        
+
+        </div>
+             </div>
+
+
+        
+
+
+
+
+
+
+
+       <% 
+            if (Session["userName"] == null)
+            {
+                Session["isAdmin"] = "False";
+        %>
+        <div class="User"> Hello user
+            <br />
+            <a href="Login.aspx" >Sign in</a>
+        </div>
+        <%
+            }
+            else
+            {
+        %>
+        <div class="welcomeMsg">Hello <%=Session["userName"] %>
+            <br />
+            <a href=Logout.aspx>Log out</a>
+        
+        <%
+            }
+        %>
+
+            </div>
+        
+
+    
+         
+
+           <div class="webicon">
+
+      <img src ="../images/webicon.png" />
+  </div>
+
+         
+<%--         <div class="instagram">
+
+             <a href="https://instagram.com/amithasin74"><ion-icon name="logo-instagram"></ion-icon></a>
+         </div>
+
+         <div class="yt">
+             <a href="https://www.youtube.com/channel/UCNWNQMdqFRZvV7VtU7sfAGw"><ion-icon name="logo-youtube"></ion-icon></a>
+
+         </div>--%>
+
+
+          
+
+ </div>
+    </div>
+
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <header>
+    	<asp:ContentPlaceHolder ID="header" runat="server">
+    	</asp:ContentPlaceHolder>
+
+          
+
+	</header>
+	<section>
+    	<nav>
+        	<asp:ContentPlaceHolder ID="nav" runat="server">
+        	</asp:ContentPlaceHolder>
+    	</nav>
+    	<main>
+        	<asp:ContentPlaceHolder ID="main" runat="server">
+        	</asp:ContentPlaceHolder>
+    	</main>
+	</section>
+	<footer>
+    	<asp:ContentPlaceHolder ID="footer" runat="server">
+    	</asp:ContentPlaceHolder>
+	</footer>
+</body>
+</html>

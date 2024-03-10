@@ -1,0 +1,83 @@
+﻿body {
+    background-image:none !important;
+    background-color: darkgray !important;
+}
+
+.registration-txt-box label, input {
+    width: 100%;
+    margin: 5px auto;
+    padding: 12px;
+    border-radius: 10px;
+    height:30px;
+}
+.registration-txt-box {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    align-items: center;
+    width: 40%;
+    height:800px;
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgb(17 ,224 ,217);
+}
+
+
+.reg-checkbox label , input{
+   /* margin-top:-50px;*/
+    height:15px;
+}
+.submit-btn input{
+   width:150px;
+   margin-top:50px;
+   display:flex;
+   height:50px;
+   float:left;
+   padding:5px;
+}
+.reset-btn input {
+    width: 150px;
+    margin-top: 50px;
+    display: flex;
+    height: 50px;
+    float:right;
+    padding:5px;
+}
+#gender{
+    text-align:left;
+    font-weight: 600;
+    transform:translate(0,95%);
+
+}
+.select-gender select {
+    width: 75px;
+    padding: 3px;
+    background-color: transparent;
+}
+.select-gender {
+ bottom:18%;
+ right:52%;
+ position:absolute;
+
+}
+#approval {
+    margin-bottom:15px;
+}
+#sign-up-welcome{
+    text-align:center;
+    font-weight:lighter;
+}
+.approval label{
+    bottom:11vh;
+    position:absolute;
+}
+.have-acc a{
+    color:violet;
+    text-decoration:none;
+    width:50px
+}
+
+
